@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
-import { Upload, DollarSign, Tag, Car } from "lucide-react";
+import { Upload, DollarSign, Tag, Car, Package } from "lucide-react";
 
 const AddProduct = ({ url }) => {
   const [formData, setFormData] = useState({
@@ -127,7 +127,7 @@ const AddProduct = ({ url }) => {
             {/* Name */}
             <div className="space-y-3">
               <div className="flex items-center gap-2 text-gray-700 font-semibold">
-                <Car className="w-5 h-5" />
+                <Package className="w-5 h-5" />
                 <label htmlFor="name">Product Name</label>
               </div>
               <input
@@ -145,7 +145,7 @@ const AddProduct = ({ url }) => {
             {/* Description */}
             <div className="space-y-3">
               <div className="flex items-center gap-2 text-gray-700 font-semibold">
-                <Car className="w-5 h-5" />
+                <Package className="w-5 h-5" />
                 <label htmlFor="description">Description</label>
               </div>
               <textarea
